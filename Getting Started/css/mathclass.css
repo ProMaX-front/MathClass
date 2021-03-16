@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #000
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box
+}
+
+/* Главная страница (home) */
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url(images/homepage.jpg)
+       center no-repeat;
+    background-size: cover;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.Math_text{
+    margin-left: 280px;
+    font-size: 148px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.1;
+    font-family: 'Lobster', cursive;
+}
+
+/* ToolBaR */
+
+.toolbar{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    z-index: 3500;
+    width: 100%;
+    transition: top 1s ease;
+    border-bottom: 25px solid #000;
+}
+
+.toolbar:hover{
+    top: 0;
+}
+
+.header_toolbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #1e2221;
+}
+
+.Math_top{
+    font-size: 50px;
+    font-weight: 3000;
+    color: #ffffff;
+    margin-left: 45px ;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Lobster', cursive;
+    border-right: 4px solid #000000;
+    padding-right: 100px;
+}
+
+
+/* Navigation */
+
+.toolbar_navigation{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Lobster', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.link_navigation{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s linear;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 45px;
+    position: relative;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.link_navigation:hover {
+    color: #fb0000;
+
+}
+
+.link_navigation:hover:after,
+.link_navigation.active:after{
+    display: block;
+    opacity: 1;
+}
+
+.link_navigation:after {
+    display: block;
+    width: 100%;
+    height: 3px;
+    content: "";
+    background-color: #fb0000;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.link_navigation.active{
+    color: #fb0000;
+}
+
+.container_in{
+    width: 100%;
+    max-width: 900px;
+}
+
+
+
+
+
+
+
